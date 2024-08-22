@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jon Blizzard</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2bf2d89947.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="index.js"></script>
     <script type="text/javascript">
@@ -42,9 +42,7 @@
             <div class="header__content">
                 <h1 class="title">Hey</h1>
                 <h1 class="title red">I'm Jon.</h1>
-                <p class="header__para">I'm a <b class="red">software developer</b> currently pursuing my goal of
-                    becoming a frontend
-                    software engineer.
+                <p class="header__para">I'm a <b class="red">software engineer</b> with a focus on front-end development and experience in full-stack projects.
                     <br>
                     Here's a bit <b class="red click" onclick="toggleModal()">about me</b>.
                 </p>
@@ -69,12 +67,14 @@
                 <h3 class="modal__title modal__title--about">
                     Here's some info about me!
                 </h3>
-                <h4 class="modal__sub-title modal__sub-title--about">Software Developer
+                <h4 class="modal__sub-title modal__sub-title--about">Software Engineer
                 </h4>
                 <p class="modal__para">
-                    I'm a software developer for a SaaS company that handles partner relations.
+                    I'm a software engineer with experience in SaaS and custom development, particularly in client implementation and portal solutions.
                     <br>
-                    I currently implement new clients and handle custom development for their portals.
+                    I'm currently exploring new opportunities to apply my skills and grow in my next role.
+                    <br>
+                    Below are the languages I'm familiar with:
                 </p>
                 <div class="modal__languages">
                     <figure class="modal__language">
@@ -132,7 +132,7 @@
         <img src="./assets/circle.svg" class="shape shape--7" alt="">
         <img src="./assets/semi circle.svg" class="shape shape--8" alt="">
     </section>
-    <section id="projects">
+    <section id="projects" onmousemove="moveBackground(event)">
         <div class="container">
             <div class="row">
                 <h1 class="section__title">
@@ -160,23 +160,23 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer onmousemove="moveBackground(event)">
         <div class="container">
             <div class="row footer__row">
                 <figure>
                     <img class="footer__logo--img" src="./assets/jon.jpg" alt="">
                 </figure>
                 <div class="footer__social--list">
-                    <a href="jonblizzard.github.io"
+                    <a href="https://github.com/JonBlizzard" target="_blank"
                         class="footer__social--link link__hover-effect link__hover-effect--white">
                         github
                     </a>
-                    <a href="https://www.linkedin.com/in/jon-b-1163b122a/"
+                    <a href="https://www.linkedin.com/in/jon-b-1163b122a/" target="_blank"
                         class="footer__social--link link__hover-effect link__hover-effect--white">
                         LinkedIn
                     </a>
-                    <a href="#" onclick="toggleModal()"
-                        class="footer__social--link link__hover-effect link__hover-effect--white">
+                    <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white"
+                        onclick="toggleModal()">
                         Contact
                     </a>
                     <a href="./assets/JonBlizzard.pdf" target="_blank"
