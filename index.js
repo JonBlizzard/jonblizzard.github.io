@@ -30,10 +30,10 @@ function contact(event) {
     loading.classList += " modal__overlay--visible";
     emailjs
         .sendForm(
-            'service_pq2qmng',
-            'template_vkb8rqh',
+            'service_33uoxnf',
+            'template_j7wklyv',
             event.target,
-            'user_Bb8BCMJ5w2oS6ywEX0HJh'
+            '98M4-ATmQ-Ag4vWvY'
         )
         .then(() => {
             loading.classList.remove("modal__overlay--visible");
@@ -42,7 +42,7 @@ function contact(event) {
         .catch(() => {
             loading.classList.remove("modal__overlay--visible");
             alert(
-                "The email service is temporarily unavailable. Please contact me directly on email@email.com"
+                "The email service is temporarily unavailable. Please contact me directly on jonblizzard88@gmail.com"
             );
         });
 }
